@@ -1,0 +1,6 @@
+<div *ngIf="personnesEmbauches.length > 0">
+    <h2> Liste des personnes embauchées </h2>
+    <div class="d-flex flex-wrap">
+        <app-detail *ngFor="let personne of personnesEmbauches" [personne]="personne"></app-detail>
+    </div>
+</div>
